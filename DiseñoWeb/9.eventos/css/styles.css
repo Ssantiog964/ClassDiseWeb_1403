@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*mantendra las propiedades de la caja siempre */
+}
+.h1{
+    border: 1px solid black;
+    background-color: azure;
+}
+.sec1{
+    width: 25%;
+    height: auto;
+    padding: 2%;
+    border: 1px solid black;
+    background-color: green;
+    color: azure;
+}

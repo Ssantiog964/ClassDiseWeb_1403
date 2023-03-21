@@ -9,12 +9,12 @@ document.body.appendChild(myElement);
 const header = document.getElementById('myHeader');
 header.appendChild(myElement);
 
-const myParrafo1 = document.createElement('p');
+let myParrafo1 = document.createElement('p');
 myParrafo1.setAttribute('class','sec3');
-const myParrafo2 = document.createElement('p');
-myParrafo2.innerHTML ="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis iusto adipisci at aliquam repellendus! Quam, ut dicta eius pariatur, earum tempore, in ullam temporibus sunt nesciunt voluptatibus dignissimos iste aliquid.";
-myParrafo1 = myParrafo2;
-myParrafo1.innerHTML="<strong>Holitas desde JS</strong>"
+//const myParrafo2 = document.createElement('p');
+myParrafo1.innerHTML ="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis iusto adipisci at aliquam repellendus! Quam, ut dicta eius pariatur, earum tempore, in ullam temporibus sunt nesciunt voluptatibus dignissimos iste aliquid.";
+myParrafo2 = myParrafo1.cloneNode(true);
+//myParrafo1.innerHTML="<strong>Holitas desde JS</strong>"
 const sec2 = document.getElementById('sec2');
 sec2.appendChild(myParrafo2);
 sec2.appendChild(myParrafo1);
